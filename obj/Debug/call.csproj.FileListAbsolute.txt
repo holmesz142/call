@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\call\call\bin\Debug\call.exe.config
+C:\Users\Admin\source\repos\call\call\bin\Debug\call.exe
+C:\Users\Admin\source\repos\call\call\bin\Debug\call.pdb
+C:\Users\Admin\source\repos\call\call\obj\Debug\call.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\call\call\obj\Debug\call.Form1.resources
+C:\Users\Admin\source\repos\call\call\obj\Debug\call.Properties.Resources.resources
+C:\Users\Admin\source\repos\call\call\obj\Debug\call.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\call\call\obj\Debug\call.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\call\call\obj\Debug\call.exe
+C:\Users\Admin\source\repos\call\call\obj\Debug\call.pdb
