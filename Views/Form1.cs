@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,13 +18,13 @@ namespace call
         public Form1()
         {
             InitializeComponent();
-            listUser.Add(new User() { ID = 1, userName = "pham tan dat", dept = "cntt", numberPhone = "12315645" });
-            listUser.Add(new User() { ID = 2, userName = "tran quoc dai", dept = "cntt", numberPhone = "12315645" });
-            listUser.Add(new User() { ID = 3, userName = "duong quoc huy", dept = "cntt", numberPhone = "12315645" });
-            listUser.Add(new User() { ID = 4, userName = "dao hong vinh", dept = "ktmt", numberPhone = "12315645" });
-            listUser.Add(new User() { ID = 5, userName = "phung vinh duc", dept = "ktdl", numberPhone = "12315645" });
-            listUser.Add(new User() { ID = 6, userName = "huynh thanh tam", dept = "abcd", numberPhone = "12315645" });
-            listUser.Add(new User() { ID = 10, userName = "phung cong chien", dept = "edgh", numberPhone = "12315645" });
+            listUser.Add(new User() { urlToImage = @"C:\Users\Admin\source\repos\call\call\2.png", userName = "pham tan dat", dept = "cntt", numberPhone = "12315645" });
+            listUser.Add(new User() { urlToImage = "1.jpg", userName = "tran quoc dai", dept = "cntt", numberPhone = "12315645" });
+            listUser.Add(new User() { urlToImage = "1.jpg", userName = "duong quoc huy", dept = "cntt", numberPhone = "12315645" });
+            listUser.Add(new User() { urlToImage = "1.jpg", userName = "dao hong vinh", dept = "ktmt", numberPhone = "12315645" });
+            listUser.Add(new User() { urlToImage = "1.jpg", userName = "phung vinh duc", dept = "ktdl", numberPhone = "12315645" });
+            listUser.Add(new User() { urlToImage = "1.jpg", userName = "huynh thanh tam", dept = "abcd", numberPhone = "12315645" });
+            listUser.Add(new User() { urlToImage = "1.jpg", userName = "phung cong chien", dept = "edgh", numberPhone = "12315645" });
             
             
         }
@@ -35,7 +37,7 @@ namespace call
             {
                 foreach(User user in listUser)
                 {
-                    if (user.dept.StartsWith(searchUser.Text))
+                    if (user.dept.StartsWith(searchUser.Text.ToLower()))
                     {
                         listUser2.Add(user);
                     }
@@ -56,14 +58,30 @@ namespace call
         private void Form1_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = listUser;
-
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
     }
     class User
     {
-        public int ID { get; set; }
+        public string urlToImage { get; set; }
         public string userName { get; set; }
         public string dept { get; set; }
         public string numberPhone { get; set; }
+       
+
+        [NotMapped]
+        public Image Avatar
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(urlToImage))
+                {
+                    if (File.Exists(urlToImage))
+                        return Image.FromFile(urlToImage);
+                }
+                return null;
+            }
+        }
     }
 }

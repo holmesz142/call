@@ -8,3 +8,4 @@ C:\Users\Admin\source\repos\call\call\obj\Debug\call.csproj.GenerateResource.cac
 C:\Users\Admin\source\repos\call\call\obj\Debug\call.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\call\call\obj\Debug\call.exe
 C:\Users\Admin\source\repos\call\call\obj\Debug\call.pdb
+C:\Users\Admin\source\repos\call\call\obj\Debug\call.Views.Form2.resources
