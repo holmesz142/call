@@ -33,6 +33,10 @@ namespace call.Views
 
         private void btnCamera_Click(object sender, EventArgs e)
         {
+            Form3 frm = new Form3();
+            frm.GetImage = pictureBox1.Image;
+            frm.ShowDialog();
+            pictureBox1.Image = frm.GetImage;
 
         }
     }

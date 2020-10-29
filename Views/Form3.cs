@@ -16,6 +16,7 @@ namespace call.Views
     {
         private FilterInfoCollection cameras;
         private VideoCaptureDevice cam;
+        public Image GetImage { get; set; }
         public Form3()
         {
             InitializeComponent();
@@ -24,8 +25,12 @@ namespace call.Views
             {
                 comboBoxCamera.Items.Add(info.Name);
             }
+
+
             
         }
+
+        
 
         private void btnStart_Click(object sender, EventArgs e)
         {
@@ -60,14 +65,16 @@ namespace call.Views
                 cam.Stop();
             }
         }
-
+            
         private void btnCapture_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.InitialDirectory = "C:\\Users\\Admin\\Desktop\\Example";
+            saveFileDialog1.InitialDirectory = "C:\\Users\\Admin\\Desktop";
             if(saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Image.Save(saveFileDialog1.FileName);
             }
+
+            GetImage = pictureBox1.Image;
         }
     }
 }

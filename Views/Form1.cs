@@ -1,4 +1,5 @@
-﻿using System;
+﻿using call.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -64,11 +65,14 @@ namespace call
 
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
+            Form2 frm = new Form2();
+            frm.Show();
         }
     }
     class User
     {
+        public string ID { get; set; }
         public string urlToImage { get; set; }
         public string userName { get; set; }
         public string dept { get; set; }
