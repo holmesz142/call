@@ -31,6 +31,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnChoose = new System.Windows.Forms.Button();
             this.btnConnect = new System.Windows.Forms.Button();
+            this.btnCamera = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -38,7 +39,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(467, 264);
+            this.pictureBox1.Size = new System.Drawing.Size(412, 264);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -54,18 +55,29 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(130, 371);
+            this.btnConnect.Location = new System.Drawing.Point(115, 371);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(227, 67);
             this.btnConnect.TabIndex = 2;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
             // 
+            // btnCamera
+            // 
+            this.btnCamera.Location = new System.Drawing.Point(274, 300);
+            this.btnCamera.Name = "btnCamera";
+            this.btnCamera.Size = new System.Drawing.Size(150, 26);
+            this.btnCamera.TabIndex = 3;
+            this.btnCamera.Text = "Camera";
+            this.btnCamera.UseVisualStyleBackColor = true;
+            this.btnCamera.Click += new System.EventHandler(this.btnCamera_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 450);
+            this.ClientSize = new System.Drawing.Size(447, 450);
+            this.Controls.Add(this.btnCamera);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.btnChoose);
             this.Controls.Add(this.pictureBox1);
@@ -81,5 +93,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnChoose;
         private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnCamera;
     }
 }

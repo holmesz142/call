@@ -30,5 +30,10 @@ namespace call.Views
                 pictureBox1.Image = bitmap;
             }
         }
+
+        private void btnCamera_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

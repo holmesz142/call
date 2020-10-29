@@ -9,3 +9,11 @@ C:\Users\Admin\source\repos\call\call\obj\Debug\call.csproj.CoreCompileInputs.ca
 C:\Users\Admin\source\repos\call\call\obj\Debug\call.exe
 C:\Users\Admin\source\repos\call\call\obj\Debug\call.pdb
 C:\Users\Admin\source\repos\call\call\obj\Debug\call.Views.Form2.resources
+C:\Users\Admin\source\repos\call\call\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Admin\source\repos\call\call\bin\Debug\AForge.Video.dll
+C:\Users\Admin\source\repos\call\call\bin\Debug\AForge.dll
+C:\Users\Admin\source\repos\call\call\bin\Debug\AForge.Video.xml
+C:\Users\Admin\source\repos\call\call\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Admin\source\repos\call\call\bin\Debug\AForge.xml
+C:\Users\Admin\source\repos\call\call\obj\Debug\call.Views.Form3.resources
+C:\Users\Admin\source\repos\call\call\obj\Debug\call.csproj.CopyComplete
