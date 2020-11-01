@@ -38,15 +38,15 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 107);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 331);
+            this.dataGridView1.Size = new System.Drawing.Size(924, 389);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // searchUser
             // 
-            this.searchUser.Location = new System.Drawing.Point(12, 39);
+            this.searchUser.Location = new System.Drawing.Point(12, 45);
             this.searchUser.Name = "searchUser";
-            this.searchUser.Size = new System.Drawing.Size(776, 20);
+            this.searchUser.Size = new System.Drawing.Size(924, 20);
             this.searchUser.TabIndex = 1;
             this.searchUser.TextChanged += new System.EventHandler(this.searchUser_TextChanged);
             // 
@@ -54,11 +54,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(948, 508);
             this.Controls.Add(this.searchUser);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -19,6 +19,8 @@ namespace call
         public Form1()
         {
             InitializeComponent();
+
+
             listUser.Add(new User() { urlToImage = @"C:\Users\Admin\source\repos\call\call\2.png", userName = "pham tan dat", dept = "cntt", numberPhone = "12315645" });
             listUser.Add(new User() { urlToImage = "1.jpg", userName = "tran quoc dai", dept = "cntt", numberPhone = "12315645" });
             listUser.Add(new User() { urlToImage = "1.jpg", userName = "duong quoc huy", dept = "cntt", numberPhone = "12315645" });

@@ -17,3 +17,5 @@ C:\Users\Admin\source\repos\call\call\bin\Debug\AForge.Video.DirectShow.xml
 C:\Users\Admin\source\repos\call\call\bin\Debug\AForge.xml
 C:\Users\Admin\source\repos\call\call\obj\Debug\call.Views.Form3.resources
 C:\Users\Admin\source\repos\call\call\obj\Debug\call.csproj.CopyComplete
+C:\Users\Admin\source\repos\call\call\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Admin\source\repos\call\call\obj\Debug\call.Views.Form4.resources
